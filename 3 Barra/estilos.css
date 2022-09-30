@@ -1,0 +1,69 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  body{
+    font-family:sans-serif;
+  }
+
+  .bar{
+    border: solid 1px rgb(243, 235, 235);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 5px 10px;
+    margin: 100px auto;
+  }
+
+  .bar:focus-within{
+    border:solid 1px rgb(59, 59, 59);
+    box-shadow: 15px 5px 10px rgba(44, 41, 44, 0.2);
+  }
+
+  .bar input{
+    border:none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    flex:auto;
+  }
+
+  .bar .actions{
+    display: flex;
+    gap: 10px;
+  }
+
+  .bar .actions button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(43, 41, 43);
+  }
+
+  .bar .actions button:hover{
+    color: rgba(6, 155, 255,1);
+  }
