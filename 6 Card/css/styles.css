@@ -1,0 +1,205 @@
+@charset "UTF-8";
+:root {
+  --color1:#99FF66;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #636261;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+  transition: 1.5s;
+}
+.card-header-plant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/Bosque_Lumirinto_\(cámara\).png);
+  background-repeat: no-repeat;
+  background-size: 110%;
+
+}
+.card-header-fire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/385.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+.card-header-fly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/P20_Monte_Tensei.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+.card-header-contimg-img {
+  padding: 15px;
+  height: 150px;
+}
+.card-body {
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid var(--color1);
+}
+.card-body-title {
+  font-size: 15px;
+}
+.card-body-title p {
+  font-size: 16px;
+}
+.card-body-text {
+  margin: 20px;
+  font-size: 20px;
+}
+.card-footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.slides-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.button {
+  position: absolute;
+  background-image: url(../img/Poke_Ball.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 320px;
+  height: 320px;
+  border-radius: 15px;
+  transition: 2s;
+
+}
+
+#slider-span1:target ~ .slider #card-1,
+#slider-span1:target ~ .slider #button-1 {
+  width: 380px;
+  height: 500px;
+  transition: 0.5s;
+  background-image: none;
+}
+
+#slider-span2:target ~ .slider #card-2,
+#slider-span2:target ~ .slider #button-2 {
+  width: 380px;
+  height: 500px;
+  transition: 0.5s;
+  background-image: none;
+}
+
+#slider-span3:target ~ .slider #card-3,
+#slider-span3:target ~ .slider #button-3 {
+  width: 380px;
+  height: 500px;
+  transition: 0.5s;
+  background-image: none;
+}
+
+#slider-span4:target ~ .slider #card-4,
+#slider-span4:target ~ .slider #button-4 {
+  width: 380px;
+  height: 500px;
+  transition: 0.5s;
+  background-image: none;
+}
+
+#slider-span5:target ~ .slider #card-5,
+#slider-span5:target ~ .slider #button-5 {
+  width: 380px;
+  height: 500px;
+  transition: 0.5s;
+  background-image: none;
+}
+
+#slider-span6:target ~ .slider #card-6,
+#slider-span6:target ~ .slider #button-6 {
+  width: 380px;
+  height: 500px;
+  transition: 0.5s;
+  background-image: none;
+}
+
+#slider-span1:target ~ .slider {
+  left: 58.6%;
+  
+}
+
+#slider-span2:target ~ .slider {
+  left: 35.2%;
+}
+
+#slider-span3:target ~ .slider {
+  left: 11.8%;
+}
+
+#slider-span4:target ~ .slider {
+  left: -11.6%;
+}
+
+#slider-span5:target ~ .slider {
+  left: -35%;
+}
+
+#slider-span6:target ~ .slider {
+  left: -58.8%;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,148 @@
+:root{
+    --color1:#99FF66;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: (62.5%);
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height:85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:#E3350D;
+    display: flex;
+    justify-content: center;
+}
+
+.slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.card{
+    background-color: gray;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    transition: 1s;
+    
+    &-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/Bosque_Lumirinto_\(cámara\).png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+
+        &-contimg{
+            &-img{
+               padding: 15px;
+               height: 150px;
+            }
+        }
+
+    }
+
+    &-body{
+        background-color:rgb(248, 248, 248);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid var(--color1) ;
+        &-title{
+            font-size: 15px;
+            p{
+                font-size: 16px;
+            }
+        }
+        &-text{
+            margin: 20px;
+            font-size: 20px;
+        }
+    }
+
+    &-footer{
+        background-color: rgb(90, 65, 65);
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+    }
+
+}
+
+.slides-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.button {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0, 0, 0.9);
+}
+
+
+#slider-span1:target ~ .slider #card-1,
+#slider-span1:target ~.slider #button-1{
+    width:380px;
+    height: 10%;
+    background-color: transparent;
+}
+#slider-span2:target ~ .slider #card-2,
+#slider-span2:target ~.slider #button-2{
+    width:380px;
+    height: 10%;
+    background-color: transparent;
+}
+#slider-span3:target ~ .slider #card-3,
+#slider-span3:target ~.slider #button-3{
+    width:380px;
+    height: 10%;
+    background-color: transparent;
+}
+
+
+#slider-span1:target ~.slider{
+    left:35%;
+}
+#slider-span2:target ~.slider{
+    left:0%;
+}
+#slider-span3:target ~.slider{
+    left:-35%;
+}
