@@ -1,0 +1,50 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.corona {
+  margin: 80px;
+  width: 270px;
+  border-top: 160px solid #ebbb30;
+  border-left: 25px solid #000;
+  border-right: 25px solid #000;
+  position: relative;
+}
+
+.picos {
+  position: absolute;
+  width: 90px;
+  height: 150px;
+  background-color: black;
+  border-radius: 50%;
+  top: -230px;
+  left: -25px;
+  box-shadow: 90px 0 black, 180px 0 black;
+}
+
+.base {
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  background-color: #ebbb30;
+  bottom: -25px;
+}
+
+.circulos {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ebbb30;
+  border-radius: 50%;
+  top: -135px;
+  left: -30px;
+  box-shadow: 85px -30px #ebbb30, 175px -30px #ebbb30, 260px 0px #ebbb30;
+}

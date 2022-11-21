@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-2 {
+  width: 90%;
+  border: 3px solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.element-1 {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  margin: 20px;
+  clip-path: circle(50%);
+  transition: clip-path 2s;
+}
+
+.element-1:hover {
+  clip-path: circle(30%);
+}
+
+.element-2 {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  margin: 20px;
+  transition: flex-grow 2s;
+}
+
+.element-2:hover {
+  flex-grow: 1;
+}
+
+.container-3 {
+  width: 90%;
+  border: 3px solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.element-3 {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  margin: 20px;
+
+  clip-path: circle(80%);
+
+  transition: clip-path 1s, transform 1s;
+}
+
+.container-3:hover .element-3 {
+  clip-path: circle(20%);
+  transform: translate(100%);
+}
+
+.container-4 {
+  width: 90%;
+  border: 3px solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.element-4 {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  margin: 20px;
+  clip-path: circle(80%);
+
+  transition-property: clip-path, transform, background-color;
+  transition-duration: 1s, 1.5s, 0.5s;
+}
+
+.container-4:hover .element-4 {
+  background-color: black;
+  clip-path: circle(20%);
+  transform: translate(-100%);
+}
+
+.container-5 {
+  width: 90%;
+  border: 3px solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.element-5 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(42, 165, 61);
+  margin: 20px;
+  clip-path: circle(20%);
+  transition-delay: 0.5s;
+  transition-property: transform, background-color;
+  transition-duration: 1s, 1.5s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.84, 0.08);
+}
+
+.container-5:hover .element-5 {
+  background-color: rgb(78, 159, 93);
+  transform: translate(100%);
+}

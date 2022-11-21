@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cdcdcd;
+}
+
+.pacman {
+  position: relative;
+  margin: 80px;
+  width: 100px;
+  border-top: 100px solid #ff0;
+  border-bottom: 100px solid #ff0;
+  border-left: 100px solid #ff0;
+  border-right: 100px solid transparent;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px rgb(0, 0, 0));
+}
+
+.pacman::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  filter: drop-shadow(0 0 4px);
+  border-radius: 50%;
+  top: -45px;
+  right: 10px;
+}

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ff9e6a;
+}
+
+.libreta {
+  position: relative;
+  margin: 80px;
+  padding-top: 15%;
+  width: 300px;
+  height: 400px;
+  background-color: tomato;
+  border-radius: 10px;
+  box-shadow: 10px 10px #fff, 20px 20px #e28b5b;
+  position: relative;
+}
+
+.pacman {
+  position: relative;
+  margin: auto;
+
+  width: 50px;
+  border-top: 50px solid #ff0;
+  border-bottom: 50px solid #ff0;
+  border-left: 50px solid #ff0;
+  border-right: 50px solid transparent;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px rgb(0, 0, 0));
+}
+
+.pacman::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #000;
+  filter: drop-shadow(0 0 4px);
+  border-radius: 50%;
+  top: -30px;
+  right: 8px;
+}
+
+.aros {
+  position: absolute;
+  top: 30px;
+  left: 7px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 40px #fff, 0 80px #fff, 0 120px #fff, 0 160px #fff, 0 200px #fff,
+    0 240px #fff, 0 280px #fff, 0 320px #fff;
+}
+
+.linea {
+  position: absolute;
+  top: 4px;
+  left: -20px;
+  width: 30px;
+  height: 8px;
+  background-color: gray;
+  border-radius: 5px;
+  box-shadow: 0 40px gray, 0 80px gray, 0 120px gray, 0 160px gray, 0 200px gray,
+    0 240px gray, 0 280px gray, 0 320px gray;
+}

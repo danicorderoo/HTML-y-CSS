@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.cta {
+  margin: auto;
+  border-radius: 6px;
+  background-color: tomato;
+  padding: 15px 55px;
+  color: azure;
+  display: inline-block;
+  text-decoration: nome;
+  font-weight: 400;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #55b99d;
+  display: flex;
+  transform: scale(0);
+  transition: transform 1s 1s;
+}
+
+.modal:target {
+  transform: scale(1);
+  transition-delay: 0s;
+}
+
+.modal_container {
+  width: 90%;
+  margin: auto;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 10px;
+  border-radius: 16px;
+  max-width: 1200px;
+  align-items: center;
+  position: relative;
+  clip-path: circle(0% at top center);
+  transition: clip-path 1s;
+}
+
+.modal:target .modal_container {
+  opacity: 0;
+  animation: showModal 2s 1s both;
+  clip-path: circle(100% at top center);
+}
+
+@keyframes showModal {
+  0% {
+    transform: translateY(-400%) rotate(20deg);
+  }
+  25% {
+    transform: translateY(-0%) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-0%) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal_img {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal_close {
+  display: block;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  background: #ce3e64;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 50%;
+  border-color: transparent;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
